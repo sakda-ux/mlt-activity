@@ -1,2 +1,264 @@
-# mlt-activity
-เว็บไซต์งานกิจกรรมนักเรียน นักศึกษา
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>งานกิจกรรมนักเรียน นักศึกษา</title>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:"Sarabun",sans-serif;
+}
+
+body{
+  background:#f4f8fc;
+}
+
+/* HEADER */
+header{
+  background:linear-gradient(135deg,#0d47a1,#1976d2);
+  color:white;
+  text-align:center;
+  padding:25px 15px;
+}
+
+header h1{
+  font-size:clamp(24px,4vw,42px);
+}
+
+header p{
+  margin-top:8px;
+  font-size:clamp(14px,2vw,18px);
+}
+
+/* MENU */
+nav{
+  background:#08306b;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:10px;
+  padding:15px;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  font-weight:bold;
+  padding:8px 14px;
+  border-radius:8px;
+  transition:0.3s;
+}
+
+nav a:hover{
+  background:#1976d2;
+}
+
+/* MAIN */
+.icon-section{
+  max-width:1300px;
+  margin:auto;
+  padding:30px 15px;
+}
+
+/* RESPONSIVE GRID */
+.icon-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+}
+
+.icon-box{
+  background:white;
+  border-radius:18px;
+  padding:28px 18px;
+  text-align:center;
+  box-shadow:0 6px 18px rgba(0,0,0,0.10);
+  transition:0.3s;
+}
+
+.icon-box:hover{
+  transform:translateY(-6px);
+  background:#e3f2fd;
+}
+
+.icon-box i{
+  font-size:50px;
+  color:#1565c0;
+  margin-bottom:15px;
+}
+
+.icon-box h3{
+  font-size:20px;
+  color:#0d47a1;
+  margin-bottom:12px;
+}
+
+.icon-box a{
+  display:inline-block;
+  margin-top:8px;
+  text-decoration:none;
+  color:#1976d2;
+  font-weight:bold;
+}
+
+/* FOOTER */
+footer{
+  background:#08306b;
+  color:white;
+  text-align:center;
+  padding:25px 15px;
+  margin-top:40px;
+  font-size:15px;
+  line-height:1.8;
+}
+
+/* PHONE */
+@media(max-width:576px){
+
+  nav{
+    flex-direction:column;
+    align-items:center;
+  }
+
+  nav a{
+    width:100%;
+    max-width:320px;
+    text-align:center;
+  }
+
+  .icon-box{
+    padding:22px 15px;
+  }
+
+  .icon-box i{
+    font-size:42px;
+  }
+
+  .icon-box h3{
+    font-size:18px;
+  }
+}
+
+/* TABLET */
+@media(min-width:577px) and (max-width:991px){
+
+  .icon-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+}
+
+/* LAPTOP / PC */
+@media(min-width:992px){
+
+  .icon-grid{
+    grid-template-columns:repeat(3,1fr);
+  }
+
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>งานกิจกรรมนักเรียน นักศึกษา</h1>
+<p>วิทยาลัยเทคนิคมวกเหล็ก</p>
+</header>
+
+<nav>
+<a href="#">หน้าแรก</a>
+<a href="#">ผังการบริหารงาน</a>
+<a href="#">ปฏิทินกิจกรรม</a>
+<a href="#">องค์การนักวิชาชีพ</a>
+<a href="#">ติดต่อ</a>
+</nav>
+
+<section class="icon-section">
+
+<div class="icon-grid">
+
+
+<div class="icon-box">
+  <i class="fas fa-file-alt"></i>
+  <h3>ระบบจัดเก็บข้อมูลเอกสารชมรมวิชาชีพ</h3>
+
+  <a href="https://script.google.com/a/macros/mlt.ac.th/s/AKfycbztJJ49sY4lr6i2N0oQsDpxjp5eLa8KiEUPjkWnvJBHcwMvIx_fgLVrx4QmhMrPd5Jr/exec"
+     target="_blank"
+     rel="noopener noreferrer">
+     คลิกเข้าสู่ระบบ
+  </a>
+</div>
+
+
+<div class="icon-box">
+<i class="fas fa-calendar-check"></i>
+<h3>ปฏิทินกิจกรรม</h3>
+<a href="#">เข้าสู่ระบบ</a>
+</div>
+
+<div class="icon-box">
+<i class="fas fa-users"></i>
+<h3>องค์การนักวิชาชีพ</h3>
+<a href="#">เข้าสู่ระบบ</a>
+</div>
+
+<div class="icon-box">
+<i class="fas fa-image"></i>
+<h3>ภาพกิจกรรม</h3>
+<a href="#">เข้าสู่ระบบ</a>
+</div>
+
+<div class="icon-box">
+<i class="fas fa-file-alt"></i>
+<h3>เอกสารดาวน์โหลด</h3>
+<a href="#">เข้าสู่ระบบ</a>
+</div>
+
+<div class="icon-box">
+<i class="fas fa-bullhorn"></i>
+<h3>ข่าวประชาสัมพันธ์</h3>
+<a href="#">เข้าสู่ระบบ</a>
+</div>
+
+<div class="icon-box">
+<i class="fas fa-award"></i>
+<h3>ผลงานนักศึกษา</h3>
+<a href="#">เข้าสู่ระบบ</a>
+</div>
+
+<div class="icon-box">
+<i class="fas fa-user-graduate"></i>
+<h3>สมาชิกนักศึกษา</h3>
+<a href="#">เข้าสู่ระบบ</a>
+</div>
+
+<div class="icon-box">
+<i class="fas fa-envelope"></i>
+<h3>ติดต่อสอบถาม</h3>
+<a href="#">เข้าสู่ระบบ</a>
+</div>
+
+<div class="icon-box">
+<i class="fas fa-cog"></i>
+<h3>ระบบผู้ดูแล</h3>
+<a href="#">เข้าสู่ระบบ</a>
+</div>
+
+</div>
+</section>
+
+<footer>
+<p>งานกิจกรรมนักเรียน นักศึกษา วิทยาลัยเทคนิคมวกเหล็ก</p>
+<p>โทร. 000-000-0000 | Facebook: งานกิจกรรมนักเรียน นักศึกษา</p>
+</footer>
+
+</body>
+</html>
